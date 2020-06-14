@@ -1,0 +1,6 @@
+All pictures we use come from the platform pixabay.com
+All pictures contains under the pixabay license! (https://pixabay.com/de/service/license/ (German) (14.10.2019))
+(Except from: logo.png, crasheddevelopment.png (They contain under the CrashedDevelopment license!))
+
+background.jpg:
+https://pixabay.com/de/illustrations/geheimnisvoll-insel-fullmoon-nacht-4848312/

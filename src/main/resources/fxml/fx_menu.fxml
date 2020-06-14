@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<!--
+  ~ Copyright © 2019 - 2020 CrashedDevelopment
+  ~
+  ~ This is a non-commercial project.
+  ~ All rights belong to their respective owners.
+  ~ You are allowed to change the software as long as no illegal content is created and / or distributed.
+  ~ All rights and information about the used libraries in the LICENSE_APACHE_2.0 / LIBRARIES and at the point "Libraries" and "Used Libraries" here.
+  ~ The license from the project contains in the file LICENSE_PROJECT!
+  ~
+  ~ You are allowed to use following changes at this software:
+  ~ - Creates new features
+  ~ - Modify source code. (Without the identification of "// Do not remove this.")
+  ~ - Publish your changes. (non-commercial)
+  ~ - Send changes to us to improve or add new features.
+  ~
+  ~ You are not allowed to do:
+  ~ - Publish the software for a commercial use without our permission.
+  ~ - Infect users with viruses or to do any other illegal content.
+  ~
+  ~ For news, updates and support:
+  ~ https://discord.gg/CBkXXKa
+  ~
+  ~ Development Team:
+  ~
+  ~ CrashedLife | Sören (Developed everything.):
+  ~ Discord: CrashedLife#9417
+  ~ Twitter: https://twitter.com/sqliCrashedLife
+  ~ Github: https://github.com/CrashedLife
+  ~ YouTube: https://www.youtube.com/channel/UC3alimqGC2YcgEK7jc_N4mg
+  ~
+  ~ Luca (Staff):
+  ~ Discord: Luca.#1337
+  ~ Twitter: https://twitter.com/luca1337_
+  ~
+  ~ Libraries:
+  ~ We used libraries to complete our project and respect and thanks every single owner that created the library.
+  ~ If some owner has problems with it please contact us.
+  ~
+  ~ Used Libraries:
+  ~ JFoeniX © jfoenixadmin
+  ~ Github: https://github.com/jfoenixadmin/
+  ~ JFoeniX: https://github.com/jfoenixadmin/JFoenix
+  ~ License: Apache 2.0 (Under LICENSE_APACHE_2.0)
+  ~
+  ~ Apache Commons IO © Apache
+  ~ Website: https://commons.apache.org/proper/commons-io/download_io.cgi
+  ~ License: Apache 2.0 (Under LICENSE_APACHE_2.0)
+  -->
+
+<TabPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="443.0" prefWidth="705.0" tabClosingPolicy="UNAVAILABLE" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="de.crasheddevelopment.csgofontmanager.core.ui.fx.controllers.MenuController">
+  <tabs>
+    <Tab text="Font Manager">
+      <content>
+        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+               <children>
+                  <ImageView fitHeight="454.0" fitWidth="729.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/background.jpg" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="14.0" layoutY="14.0" text="Font:" textFill="#0b877e">
+                     <font>
+                        <Font name="Tahoma" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="14.0" layoutY="78.0" text="Font Name:" textFill="#0b877e">
+                     <font>
+                        <Font name="Tahoma" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="14.0" layoutY="147.0" text="CSGO Folder:" textFill="#0b877e">
+                     <font>
+                        <Font name="Tahoma" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="218.0" layoutY="354.0" text="Make sure that CS:GO is closed!" textFill="#04c4ff">
+                     <font>
+                        <Font name="Tahoma" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="218.0" layoutY="377.0" text="Make sure that the font is already installed!" textFill="#04c4ff">
+                     <font>
+                        <Font name="Tahoma" size="18.0" />
+                     </font>
+                  </Label>
+                  <JFXTextField fx:id="fontFileTextField" layoutX="14.0" layoutY="37.0" prefHeight="25.0" prefWidth="263.0" promptText="Font Path" />
+                  <JFXTextField fx:id="fontNameTextField" layoutX="14.0" layoutY="101.0" prefHeight="25.0" prefWidth="263.0" promptText="Font name" />
+                  <JFXTextField fx:id="csgoPathTextField" layoutX="14.0" layoutY="170.0" prefHeight="25.0" prefWidth="263.0" text="C:\Program Files (x86)\Steam\steamapps\common\Counter-Strike Global Offensive\csgo\" />
+                  <JFXButton buttonType="RAISED" layoutX="297.0" layoutY="32.0" onAction="#browseFontFile" ripplerFill="#94227b" text="Browse Font File" textFill="#7a14ff">
+                     <font>
+                        <Font name="Tahoma" size="18.0" />
+                     </font>
+                  </JFXButton>
+                  <JFXButton buttonType="RAISED" layoutX="297.0" layoutY="165.0" onAction="#browseCSGOFolder" ripplerFill="#94227b" text="Browse CSGO Folder" textFill="#7a14ff">
+                     <font>
+                        <Font name="Tahoma" size="18.0" />
+                     </font>
+                  </JFXButton>
+                  <JFXButton buttonType="RAISED" layoutX="14.0" layoutY="207.0" onAction="#changeFont" ripplerFill="#94227b" text="Change Font" textFill="#7a14ff">
+                     <font>
+                        <Font name="Tahoma" size="18.0" />
+                     </font>
+                  </JFXButton>
+                  <JFXButton buttonType="RAISED" layoutX="543.0" layoutY="8.0" onAction="#browseBackupFolder" ripplerFill="#94227b" text="Restore Backup" textFill="#7a14ff">
+                     <font>
+                        <Font name="Tahoma" size="18.0" />
+                     </font>
+                  </JFXButton>
+               </children></AnchorPane>
+      </content>
+    </Tab>
+    <Tab text="About">
+      <content>
+        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+               <children>
+                  <ImageView fitHeight="454.0" fitWidth="729.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/background.jpg" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="349.0" fitWidth="549.0" layoutX="190.0" layoutY="71.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/crasheddevelopment.png" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="14.0" layoutY="14.0" text="CS:GO FontManager (c) 2020 CrashedDevelopment" textFill="#c71484">
+                     <font>
+                        <Font name="Tahoma" size="14.0" />
+                     </font>
+                  </Label>
+               </children></AnchorPane>
+      </content>
+    </Tab>
+  </tabs>
+</TabPane>
