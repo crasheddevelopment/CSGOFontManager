@@ -1,0 +1,9 @@
+Version 1.1.0
+    build 2:
+        - Redesigned application.
+        - Recoded application.
+        - Removed agreement from start up and move it to the README.txt!
+
+Version 1.0.0:
+    build 1:
+        - Published and released project.

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  ~ Copyright © 2019 - 2020 CrashedDevelopment
+  ~
+  ~ This is a non-commercial project.
+  ~ All rights belong to their respective owners.
+  ~ You are allowed to change the software as long as no illegal content is created and / or distributed.
+  ~ All rights and information about the used libraries in the LICENSE_APACHE_2.0.txt / LIBRARIES.txt and at the point "Libraries" and "Used Libraries" here.
+  ~ The license from the project contains in the file LICENSE_PROJECT.txt!
+  ~
+  ~ You are allowed to use following changes at this software:
+  ~ - Creates new features
+  ~ - Modify source code. (Without the identification of "// Do not remove this.")
+  ~ - Publish your changes. (non-commercial)
+  ~ - Send changes to us to improve or add new features.
+  ~
+  ~ You are not allowed to do:
+  ~ - Publish the software for a commercial use without our permission.
+  ~ - Infect users with viruses or to do any other illegal content.
+  ~
+  ~ For news, updates and support:
+  ~ https://discord.gg/CBkXXKa
+  ~
+  ~ Development:
+  ~
+  ~ CrashedLife | Sören:
+  ~ Discord: CrashedLife#9417
+  ~ Twitter: https://twitter.com/sqliCrashedLife
+  ~ Github: https://github.com/CrashedLife
+  ~ YouTube: https://www.youtube.com/channel/UC3alimqGC2YcgEK7jc_N4mg
+  ~
+  ~ Libraries:
+  ~ We used libraries to complete our project and respect and thanks every single owner that created the library.
+  ~ If some owner has problems with it please contact us.
+  -->
+
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>de.crasheddevelopment</groupId>
+    <artifactId>CSGOFontManager</artifactId>
+    <version>1.1.0-SNAPSHOT</version>
+
+    <dependencies>
+        <!-- https://mvnrepository.com/artifact/com.jfoenix/jfoenix -->
+        <dependency>
+            <groupId>com.jfoenix</groupId>
+            <artifactId>jfoenix</artifactId>
+            <version>8.0.8</version>
+        </dependency>
+        <!-- https://mvnrepository.com/artifact/commons-io/commons-io -->
+        <dependency>
+            <groupId>commons-io</groupId>
+            <artifactId>commons-io</artifactId>
+            <version>2.6</version>
+        </dependency>
+    </dependencies>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <configuration>
+                    <source>8</source>
+                    <target>8</target>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+</project>
