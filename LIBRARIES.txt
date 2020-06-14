@@ -1,0 +1,9 @@
+Used Libraries:
+JFoeniX © jfoenixadmin
+Github: https://github.com/jfoenixadmin/
+JFoeniX: https://github.com/jfoenixadmin/JFoenix
+License: Apache 2.0 (Under LICENSE_APACHE_2.0)
+
+Apache Commons IO © Apache
+Website: https://commons.apache.org/proper/commons-io/download_io.cgi
+License: Apache 2.0 (Under LICENSE_APACHE_2.0)

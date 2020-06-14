@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<!--
+  ~ Copyright © 2019 - 2020 CrashedDevelopment
+  ~
+  ~ This is a non-commercial project.
+  ~ All rights belong to their respective owners.
+  ~ You are allowed to change the software as long as no illegal content is created and / or distributed.
+  ~ All rights and information about the used libraries in the LICENSE_APACHE_2.0.txt / LIBRARIES.txt and at the point "Libraries" and "Used Libraries" here.
+  ~ The license from the project contains in the file LICENSE_PROJECT.txt!
+  ~
+  ~ You are allowed to use following changes at this software:
+  ~ - Creates new features
+  ~ - Modify source code. (Without the identification of "// Do not remove this.")
+  ~ - Publish your changes. (non-commercial)
+  ~ - Send changes to us to improve or add new features.
+  ~
+  ~ You are not allowed to do:
+  ~ - Publish the software for a commercial use without our permission.
+  ~ - Infect users with viruses or to do any other illegal content.
+  ~
+  ~ For news, updates and support:
+  ~ https://discord.gg/CBkXXKa
+  ~
+  ~ Development:
+  ~
+  ~ CrashedLife | Sören:
+  ~ Discord: CrashedLife#9417
+  ~ Twitter: https://twitter.com/sqliCrashedLife
+  ~ Github: https://github.com/CrashedLife
+  ~ YouTube: https://www.youtube.com/channel/UC3alimqGC2YcgEK7jc_N4mg
+  ~
+  ~ Libraries:
+  ~ We used libraries to complete our project and respect and thanks every single owner that created the library.
+  ~ If some owner has problems with it please contact us.
+  -->
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="216.0" prefWidth="692.0" stylesheets="@../css/menu.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="de.crasheddevelopment.csgofontmanager.core.system.ui.fx.controllers.MenuController">
+   <children>
+      <JFXTextField fx:id="fontFilePathTextField" labelFloat="true" layoutX="14.0" layoutY="14.0" prefHeight="25.0" prefWidth="350.0" promptText="Font Path" />
+      <JFXTextField fx:id="fontNameTextField" labelFloat="true" layoutX="14.0" layoutY="56.0" prefHeight="25.0" prefWidth="350.0" promptText="Font Name" />
+      <JFXTextField fx:id="csgoPathTextField" labelFloat="true" layoutX="14.0" layoutY="98.0" prefHeight="25.0" prefWidth="350.0" promptText="CS:GO File Path" text="C:\Program Files (x86)\Steam\steamapps\common\Counter-Strike Global Offensive\csgo\"/>
+      <JFXButton onAction="#browseFontFile" buttonType="RAISED" layoutX="387.0" layoutY="14.0" ripplerFill="#822c99" text="Browse Font File" textFill="#cd5555">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </JFXButton>
+      <JFXButton onAction="#browseCSGOFolder" buttonType="RAISED" layoutX="387.0" layoutY="94.0" ripplerFill="#822c99" text="Browse CS:GO Path" textFill="#cd5555">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </JFXButton>
+      <JFXButton onAction="#changeFont" buttonType="RAISED" layoutX="14.0" layoutY="141.0" ripplerFill="#822c99" text="Change Font Style" textFill="#cd5555">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </JFXButton>
+      <JFXButton onAction="#browseBackupFolder" buttonType="RAISED" layoutX="560.0" layoutY="14.0" ripplerFill="#822c99" text="Restore Backup" textFill="#cd5555">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>
